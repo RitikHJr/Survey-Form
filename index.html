@@ -9,31 +9,161 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1 id="title" class="text-center">DAV Survey Form</h1>
-        <p id="description" class="description text-center">DAV</p>
+        <h1 id="title" class="">Zombie Apocalypse Preparedness Survey</h1>
+        <p id="description" class="font-size-18">
+          Help us understand how ready you are for the upcoming zombie
+          apocalypse! Answer a few questions about your survival strategies,
+          zombie preferences, and more.
+        </p>
       </header>
+      <hr class="dotted-line" />
+
       <form id="survey-form">
-        <fieldset>
-          <label for="name"
-            >Name
-            <input type="text" id="name" class="" placeholder="Name" required
-          /></label>
-        </fieldset>
+        <label for="name" id="name-label"
+          >Name
+          <input
+            placeholder="What's your survivor name?"
+            id="name"
+            type="text"
+            required
+          />
+        </label>
+
+        <label for="email" id="email-label"
+          >Email
+          <input
+            placeholder="Where can we send your survival guide?x"
+            id="email"
+            type="email"
+            required
+          />
+        </label>
+
+        <label for="age" id="number-label"
+          >Age
+          <input
+            placeholder="Number"
+            id="number"
+            type="number"
+            min="18"
+            max="23"
+          />
+        </label>
+
+        <!-- Select -->
+        <label for=""
+          >Gender
+          <select id="dropdown">
+            <option value="">Gender</option>
+            <option value="0">Male</option>
+            <option value="1">Female</option>
+          </select>
+        </label>
+
+        <!-- Radio Button's -->
+        <div class="form-group">
+          <p>How ready are you for a zombie apocalypse?</p>
+          <label class="flex align-center" for="">
+            <input
+              name="ready-for-zombie-apocalypse"
+              value="Totally ready"
+              type="radio"
+              class="input-radio"
+              checked
+            />Totally ready
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="ready-for-zombie-apocalypse"
+              value="Somewhat ready"
+              type="radio"
+              class="input-radio"
+            />
+            Somewhat ready
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="ready-for-zombie-apocalypse"
+              value="Not sure"
+              type="radio"
+              class="input-radio"
+            />
+            Not sure
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="ready-for-zombie-apocalypse"
+              value="Definitely not ready"
+              type="radio"
+              class="input-radio"
+            />
+            Definitely not ready
+          </label>
+        </div>
+
+        <!-- Checkboxes -->
+        <div class="form-group">
+          <p>Choose your zombie-fighting weapon</p>
+          <label class="flex align-center" for="">
+            <input
+              name="weapon"
+              value="Baseball bat"
+              type="checkbox"
+              class="input-radio"
+              checked
+            />Baseball bat
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="weapon"
+              value="Crossbow"
+              type="checkbox"
+              class="input-radio"
+            />
+            Crossbow
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="weapon"
+              value="Machete"
+              type="checkbox"
+              class="input-radio"
+            />
+            Machete
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="weapon"
+              value="Shotgun"
+              type="checkbox"
+              class="input-radio"
+            />
+            Shotgun
+          </label>
+          <label class="flex align-center" for="">
+            <input
+              name="weapon"
+              value="Flamethrower"
+              type="checkbox"
+              class="input-radio"
+            />
+            Flamethrower
+          </label>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <p>If you could send one message to the zombies, what would it be?</p>
+          <textarea
+            name="weapon"
+            value="Baseball bat"
+            placeholder="Write your message to the zombies here..."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <input id="submit" type="submit" value="Submit" class="submit-btn" />
+        </div>
       </form>
     </div>
-
-    <!-- <form id="survey-form">
-      <div class="name">
-        <label id="name-label" for="name">Student Name </label>
-        <input
-          type="text"
-          name=""
-          id="name"
-          class=""
-          placeholder="Name"
-          required
-        />
-      </div>
-    </form>  -->
   </body>
 </html>
